@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>uploaded Img Result</title>
+</head>
+<body>
+{% if file_url %}
+    <img src="{{ file_url }}" class="img-fluid">
+<p>congrats!! your image successfully uploaded!!</p>
+    <br>
+    {% else %}
+    <p>No image added.</p>
+    {% endif %}
+</body>
+</html>
